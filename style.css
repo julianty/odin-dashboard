@@ -90,8 +90,13 @@ li {
 }
 
 .searchbar input {
-  height: 20px;
-  border-radius: 5px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+div.rightheader {
+  padding: 0;
+  justify-items: space-between;
 }
 
 .rightheader .jen {
