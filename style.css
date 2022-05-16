@@ -67,6 +67,80 @@ li {
 
 .header {
   background-color: white;
+  display: grid;
+}
+
+.upperheader, .lowerheader{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header div {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.searchbar {
+  grid-template-columns: 40px 1fr;
+}
+
+.searchbar input {
+  height: 20px;
+  border-radius: 5px;
+}
+
+.rightheader .jen {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.lowerheader {
+  grid-template-columns: 3fr 2fr;
+}
+
+.usergreet {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.usergreet .jen {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  grid-row: 1 / -1;
+}
+
+.usergreet .user {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.lowerheader .actions {
+  justify-content: space-between;
+  padding: 0;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 120px;
 }
 
 .content {
